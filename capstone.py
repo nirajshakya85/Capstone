@@ -1,26 +1,7 @@
-# %% [markdown]
-# # Manufactured Home Price Prediction
-# **MHS Data Scraping| MHS EDA| MHS Modeling | Final Pipeline**
-# 
-# ---
-# 
-
-# %% [markdown]
-# Below Codes Searches the available raw dataset, if there is new data available, it will fetch and complies into single excel spreadsheet.
-
-# %%
-#import all packages & libraries
-%pip install openpyxl pandas xlrd
-%pip install numpy
-%pip install matplotlib
-%pip install seaborn
-%pip install lightgbm
-%pip install scikit-learn
-
-# DBTITLE 1,
 from __future__ import annotations
 
 import argparse
+from gettext import install
 import hashlib
 import re
 import sys
@@ -30,6 +11,7 @@ from pathlib import Path
 from typing import Iterable
 from urllib.parse import urljoin
 from urllib.request import Request, urlopen
+
 
 import openpyxl
 import pandas as pd
